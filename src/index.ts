@@ -1,7 +1,19 @@
-import { greetUser } from '$utils/greet';
+import './index.css';
+
+import { svgComponent } from './utils/global/tricks';
+import { swiperHysolEvents } from './utils/hysol/eventsSwiper';
+import { loopHysolFooter } from './utils/hysol/footerLoop';
+import { swiperHysolPartners } from './utils/hysol/partnersSwiper';
+import { swiperHysolWhy } from './utils/hysol/whySwiper';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  // tricks
+  svgComponent();
+
+  // Hysol
+  swiperHysolPartners();
+  swiperHysolEvents();
+  swiperHysolWhy();
+  loopHysolFooter();
 });
