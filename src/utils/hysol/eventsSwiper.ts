@@ -10,27 +10,28 @@ export function swiperHysolEvents() {
     new Swiper(container as HTMLElement, {
       modules: [Autoplay, Mousewheel],
       direction: 'horizontal',
+      centeredSlides: true,
       loop: true,
-      slidesPerView: 3,
-      spaceBetween: 1.875 * 16,
       speed: 500,
-      autoplay: {
-        delay: 1000,
-        pauseOnMouseEnter: true,
-        // disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      //   pauseOnMouseEnter: true,
+      // },
       mousewheel: {
         forceToAxis: true,
       },
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 1.3,
+          spaceBetween: 0.25 * 16,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
+          spaceBetween: 0.5 * 16,
         },
         992: {
           slidesPerView: 3,
+          spaceBetween: 1.875 * 16,
         },
       },
     });

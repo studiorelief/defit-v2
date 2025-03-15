@@ -1,0 +1,11 @@
+.swiper.is-hysol-why {
+  overflow: visible;
+}
+
+.swiper-slide.is-hysol-why.w-dyn-item.swiper-slide-next {
+  width: 20rem;
+}
+
+.swiper-slide.is-hysol-why.w-dyn-item.swiper-slide-next .hysol_why_image {
+  opacity: 1;
+}

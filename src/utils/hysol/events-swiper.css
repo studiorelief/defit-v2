@@ -1,0 +1,21 @@
+@media screen and (max-width: 991px) {
+  .swiper.is-hysol-events {
+    overflow: visible;
+  }
+}
+
+.swiper-slide.is-hysol-events {
+  opacity: 0.2;
+  scale: 0.6;
+  transition: scale 0.5s ease-in-out;
+}
+
+.swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-active {
+  opacity: 1;
+  scale: 1;
+}
+
+.swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-next,
+.swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-prev {
+  scale: 0.8;
+}

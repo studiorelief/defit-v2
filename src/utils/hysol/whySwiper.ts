@@ -11,13 +11,12 @@ export function swiperHysolWhy() {
       modules: [Autoplay, Mousewheel],
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 5,
-      spaceBetween: 1.875 * 16,
+      // spaceBetween: 1.875 * 16,
       speed: 500,
+      slidesPerView: 'auto',
       autoplay: {
-        delay: 1000,
+        delay: 2000,
         pauseOnMouseEnter: true,
-        // disableOnInteraction: false,
       },
       mousewheel: {
         forceToAxis: true,
@@ -30,7 +29,7 @@ export function swiperHysolWhy() {
           slidesPerView: 4,
         },
         992: {
-          slidesPerView: 5,
+          slidesPerView: 'auto',
         },
       },
     });

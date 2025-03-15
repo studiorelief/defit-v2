@@ -11,11 +11,10 @@ export function swiperHysolPartners() {
       modules: [Autoplay, Mousewheel],
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 8,
       spaceBetween: 1.875 * 16,
-      speed: 500,
+      speed: 2000,
       autoplay: {
-        delay: 1000,
+        delay: 0,
         pauseOnMouseEnter: true,
         // disableOnInteraction: false,
       },
@@ -24,10 +23,10 @@ export function swiperHysolPartners() {
       },
       breakpoints: {
         320: {
-          slidesPerView: 2,
+          slidesPerView: 4,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 6,
         },
         992: {
           slidesPerView: 8,

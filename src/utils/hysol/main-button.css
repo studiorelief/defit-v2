@@ -1,0 +1,9 @@
+.hysol_button:hover .hysol_button-text-hover {
+  opacity: 1;
+  transform: translate(0%, 0px);
+}
+
+.hysol_button:hover .hysol_button-text {
+  opacity: 0;
+  transform: translate(50%, 0px);
+}
