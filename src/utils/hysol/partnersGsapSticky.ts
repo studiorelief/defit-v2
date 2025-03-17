@@ -12,7 +12,7 @@ export function partnersGsapSticky() {
   }
 
   (partnersSection as HTMLElement).style.position = 'fixed';
-  (partnersSection as HTMLElement).style.bottom = '0';
+  (partnersSection as HTMLElement).style.bottom = '2rem';
   (partnersSection as HTMLElement).style.width = '100%';
   partnersSection.classList.add('fixed');
 
@@ -36,7 +36,7 @@ export function partnersGsapSticky() {
 
       partnersSection.classList.add('fixed');
       (partnersSection as HTMLElement).style.position = 'fixed';
-      (partnersSection as HTMLElement).style.bottom = '0';
+      (partnersSection as HTMLElement).style.bottom = '2rem';
       (partnersSection as HTMLElement).style.width = '100%';
 
       gsap.fromTo(
@@ -44,7 +44,7 @@ export function partnersGsapSticky() {
         { y: rect.top },
         {
           y: 0,
-          duration: 0.3,
+          duration: 0,
           ease: 'power2.out',
         }
       );
