@@ -2,7 +2,7 @@ import './index.css';
 
 import { svgComponent } from '$utils/global/tricks';
 import { swiperHysolEvents } from '$utils/hysol/eventsSwiper';
-import { loopHysolFooter } from '$utils/hysol/footerLoop';
+import { loopHysolFooter, rotationHysolText } from '$utils/hysol/footerLoop';
 import { animateHeroTitle } from '$utils/hysol/heroTitle';
 import { partnersGsapSticky } from '$utils/hysol/partnersGsapSticky';
 import { swiperHysolPartners } from '$utils/hysol/partnersSwiper';
@@ -19,4 +19,5 @@ window.Webflow.push(() => {
   loopHysolFooter();
   partnersGsapSticky();
   animateHeroTitle();
+  rotationHysolText();
 });

@@ -1,0 +1,7 @@
+.section_hysol_partners {
+  background-color: var(--_brand---background--primary);
+}
+
+.section_hysol_partners.fixed {
+  background-color: transparent !important;
+}

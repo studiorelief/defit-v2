@@ -42,11 +42,11 @@ export function loopHysolFooter() {
     }
 
     const width = marqueeContent.offsetWidth;
-    const gap = 16; // Gap between repeated elements
+    const gap = 0; // Gap between repeated elements
     const distanceToTranslate = -1 * (width + gap);
 
     // Apply gap between elements
-    (marqueeContentClone as HTMLElement).style.marginLeft = `${gap}px`;
+    // (marqueeContentClone as HTMLElement).style.marginLeft = `${gap}px`;
 
     tween = gsap.fromTo(
       marquee.children,
@@ -72,4 +72,20 @@ export function loopHysolFooter() {
   }
 
   window.addEventListener('resize', debounce(playMarquee));
+}
+
+export function rotationHysolText() {
+  const textWrappers = document.querySelectorAll('.hysol_footer_loop-decorative-text');
+
+  if (!textWrappers.length) return;
+
+  textWrappers.forEach((wrapper) => {
+    gsap.to(wrapper, {
+      rotation: -360,
+      repeat: -1,
+      duration: 10,
+      ease: 'linear',
+      transformOrigin: 'center center',
+    });
+  });
 }
