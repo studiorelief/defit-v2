@@ -22,8 +22,8 @@ export function swiperHysolEvents() {
       },
       breakpoints: {
         320: {
-          slidesPerView: 1.3,
-          spaceBetween: 0.25 * 16,
+          slidesPerView: 1.1,
+          spaceBetween: 0.5 * 16,
         },
         768: {
           slidesPerView: 2,

@@ -15,7 +15,14 @@
   scale: 1;
 }
 
+@media screen and (min-width: 991px) {
+  .swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-next,
+  .swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-prev {
+    scale: 0.8;
+  }
+}
+
 .swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-next,
 .swiper-slide.is-hysol-events.w-dyn-item.swiper-slide-prev {
-  scale: 0.8;
+  scale: 0.95;
 }

@@ -17,7 +17,9 @@ window.Webflow.push(() => {
   swiperHysolEvents();
   swiperHysolWhy();
   loopHysolFooter();
-  partnersGsapSticky();
+  if (window.innerWidth > 991) {
+    partnersGsapSticky();
+  }
   animateHeroTitle();
   rotationHysolText();
 });

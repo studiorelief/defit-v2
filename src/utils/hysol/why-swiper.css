@@ -6,6 +6,14 @@
   width: 20rem;
 }
 
-.swiper-slide.is-hysol-why.w-dyn-item.swiper-slide-next .hysol_why_image {
-  opacity: 1;
+@media screen and (min-width: 767px) {
+  .swiper-slide.is-hysol-why.w-dyn-item.swiper-slide-next .hysol_why_image {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide.is-hysol-why.w-dyn-item.swiper-slide-active .hysol_why_image {
+    opacity: 1;
+  }
 }
